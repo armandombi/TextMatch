@@ -34,7 +34,7 @@ namespace TextMatch.Tests
         public void TextMatchPositionEmptySearch() {
             StringHelper utility = new StringHelper();
 
-            List<int> result = utility.TextMatchPosition(null, "");
+            List<int> result = utility.TextMatchPosition("Lorem ipsum dolor", "");
 
             Assert.IsNotNull(result);
             Assert.AreEqual(0, result.Count);
@@ -44,7 +44,7 @@ namespace TextMatch.Tests
         public void TextMatchPositionNullSearch() {
             StringHelper utility = new StringHelper();
 
-            List<int> result = utility.TextMatchPosition(null, "");
+            List<int> result = utility.TextMatchPosition("Lorem ipsum dolor", null);
 
             Assert.IsNotNull(result);
             Assert.AreEqual(0, result.Count);
