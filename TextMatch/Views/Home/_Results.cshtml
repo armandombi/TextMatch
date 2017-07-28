@@ -1,0 +1,6 @@
+﻿@model TextMatch.Models.Text
+
+@for (var i = 0; i < Model.Results.Count; i++) {
+    @Html.Label(Model.Results[i].ToString())
+    <br/>
+}
